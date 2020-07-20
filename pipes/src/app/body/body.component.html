@@ -1,0 +1,31 @@
+<h1>Pipes in angular</h1>
+<h2>Date pipes</h2>
+<button class="date" (click)=date()>Date</button>
+<div class="date">
+  <p>Full Date: {{currentDate | date:'full'}}</p>
+  <p>Medium Date: {{currentDate | date:'medium'}}</p>
+  <p>Short Date: {{currentDate | date:'short'}}</p>
+  <p>Full Date: {{currentDate | date:'fullDate'}}</p>
+  <p>Time: {{currentDate | date:'longTime'}}</p>
+  <p>Time: {{currentDate | date:'mediumTime'}}</p>
+  <p>Time: {{currentDate | date:'shortTime'}}</p>
+</div>
+
+<h2>Number pipes</h2>
+<p>NoFormatting : {{100 | number}}</p>
+<p>2 Decimal place : {{100 | number:'2.2'}}</p>
+
+<h2>Currency Pipes</h2>
+<p>NoFormatting : {{100 | number}}</p>
+<p>USD Dollar($) : {{100 | currency:'USD'}}</p>
+<p>USD Dollar($) : {{100 | currency:'USD':'code'}}</p>
+<p>INR() : {{100 | currency:'INR'}}</p>
+<p>INR() : {{100 | currency:'INR':'code'}}</p>
+
+<h2>String Related Pipes</h2>
+<p>Actual Message : {{"Angular 8.0 is a Component Based Framework"}}</p>
+<p>Lower case : {{"Angular 8.0 is a Component Based Framework" | lowercase}}</p>
+<p>Upper case : {{"Angular 8.0 is a Component Based Framework" | uppercase}}</p>
+
+<h2>Percentage Pipes</h2>
+<p>2 Place Formatting : {{10000 | percent:'4.2'}}</p>
